@@ -1,0 +1,47 @@
+version 6: released 10/21 2:00 AM
+ - updated writeup question 7 to say OrderedRingProperties(Ints) instead of
+   just RingProperties(Ints).  See Piazza post @866
+
+ - completed Region.Make.union.  It seems to work; please report any bugs
+
+version 5.1: released 10/21 2:35 PM
+ - removed logging from released files, they were causing a type mismatch.
+
+version 5: released 10/21
+ - added TODOs to stubs for obstacles and selection functions
+ - partial implementation of region.ml: everything but union is implemented and
+   works
+ - added "test_region.ml" as an example of my testing workflow.  See Piazza post
+   @858
+ - small change to writeup: in the description of the Minkowski difference, the
+   writeup said
+
+     "we compute a representation of the set of points $y$ such that if $S$ were
+      placed at $y$, there would be no overlaps"
+
+   it has been changed to
+
+     "... there would be an overlap"
+
+
+version 4: released 10/15
+ - rolled back changes in version 3
+ - removed redundant nums.cma from Makefile
+
+version 3: released 10/14
+ - changed FieldOfFractionsType to a module type rather than a functor type
+ - changed the TODO comment to reflect the above change.
+
+version 2: released 10/14
+ - added from_numerator to FieldOfFractions interface
+ - added nums.cma to Makefile
+
+ - added a specification to Field.inv making the behavior explicitly undefined
+   for division by zero
+ - added a specification to FieldOfFractions.inv making it raise an exception
+   for division by zero.
+
+version 1: released 10/6
+ - initial revision
+ - region.ml is unimplemented; we will release an implementation soon.
+

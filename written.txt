@@ -1,0 +1,21 @@
+7a)  times_inverse  
+     any input besides 1 then would violate this property
+     
+     because integer division floors any quotient so when you multiply say 2 
+     and its inverse according to integer division, you would get 0 which is != to 1
+
+b)  non_negative_times
+    max_int 2
+     
+    max_int * 2 -> -2 even though max_int and 2 are non_neg 
+
+c)  transitive 
+    .000001 .000002 .000003
+    
+    since equality for floats is defined as within 10^-6, the first two values will
+    be equal and the last two will be as well but the first and the third will not.
+
+d)  Because you have to check equality on your numbers multiple times when you are
+    calculating the Minkowski Difference during your tangrams games, it would be a
+    horrible idea to use real numbers since their equality function may never terminate.
+
